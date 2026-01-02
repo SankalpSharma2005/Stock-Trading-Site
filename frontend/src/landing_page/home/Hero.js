@@ -1,4 +1,5 @@
 import React from 'react';
+import { redirectToDashboard } from '../redirectToDashboard';
 
 function Hero() {
     return (
@@ -7,7 +8,7 @@ function Hero() {
                 <img src='media/homeHero.png' alt='Hero Image' className='mb-5' />
                 <h1 className='mt-5' style={{ color: "#424242" }}>Invest in everything</h1>
                 <p style={{ color: "#424242" }}>Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.</p>
-                <button className='p-2 btn btn-primary fs-5 mb-5' style={{ width: "16%", margin: "0 auto", backgroundColor: "#387ED1" }}>Sign up for free</button>
+                <button className='p-2 btn btn-primary fs-5 mb-5' style={{ width: "16%", margin: "0 auto", backgroundColor: "#387ED1" }} onClick={redirectToDashboard}>Sign up for free</button>
             </div>
         </div>
     );
